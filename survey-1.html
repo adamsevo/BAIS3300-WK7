@@ -6,10 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Page 1</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
-
 </head>
 <body>
     <h1>Survey Page 1</h1>
+    <form>
+        <fieldset>
+            <legend>
+                Contact Information
+            </legend>
+                <div>
+                    <label for="fname"> First Name:
+                        <input id=""fname" type="text" autofocus>
+                    </label>
+                </div>
+                <div>
+                <label for="lname"> Last Name:
+                    <input id="lname" type="text">
+                </label>
+                </div>
+                <div>
+                    <label for="email"> Email:
+                        <input id="email" type="email">
+                    </label>
+                    </div>
+        </fieldset>
+        <div>
+            <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+        </div>
+    </form>
     <p>
     <button onclick="window.location.href='./survey-2.html';">
             Next

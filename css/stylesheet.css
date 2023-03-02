@@ -1,3 +1,8 @@
+h1 { font-family: "Playfair Display"}
 body {
-    background-color: blanchedalmond
+    background-color: honeydew;
+    font-family: "Source Sans Pro"
+}
+button {
+    font-family: "Source Sans Pro"
 }
