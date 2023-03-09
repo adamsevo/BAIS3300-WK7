@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Page 1</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Survey Page 1</h1>
@@ -16,29 +22,78 @@
             </legend>
                 <div>
                     <label for="fname"> First Name:
-                        <input id=""fname" type="text" autofocus>
+                        <input id=""fname" type="text" placeholder="Type your first name" autofocus>
                     </label>
                 </div>
                 <div>
                 <label for="lname"> Last Name:
-                    <input id="lname" type="text">
+                    <input id="lname" type="text" placeholder="Type your last name" >
                 </label>
                 </div>
                 <div>
                     <label for="email"> Email:
-                        <input id="email" type="email">
+                        <input id="email" type="email" placeholder="example@domain.url">
                     </label>
                     </div>
         </fieldset>
+        <p>
+
+        </p>
+        <fieldset>
+            <legend> Age range </legend>
         <div>
-            <label for="cars">Choose a car:</label>
-                <select name="cars" id="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+            <label for="cars">Select your age range:</label>
+                <select name="age" id="age" required>
+                    <option value="">Please select a response...</option>
+                    <option value="1">0-18</option>
+                    <option value="2">19-22</option>
+                    <option value="3">23-28</option>
+                    <option value="4">29-99</option>
                 </select>
         </div>
+        </fieldset>
+        <p>
+            
+        </p>
+        <div>
+            <fieldset>
+                <legend> Gender identification </legend>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female"> Female 
+            </label>
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male"> Male
+            </label>
+            <label for="non-binary">
+                <input type="radio" id="non-binary" name="gender" value="non-binary">Non-binary
+            </label>
+            <label for="prefer not to answer">
+                <input type="radio" id="pnta" name="gender" value="prefer not to answer">Prefer not to answer
+            </label>
+            </fieldset>
+        </div>
+        <p>
+            
+        </p>
+        <fieldset>
+            <legend> Select the following that apply to you: </legend>
+              <label for="Part-time student">
+                <input type="checkbox" id="Part-time student" name="activities" value ="Part-time student"> Part-time student
+              </label>    
+          
+              <label for="Full-time student">
+                <input type="checkbox" id="Full-time student" name="activities" value="Full-time student"> Full-time student
+              </label>
+          
+              <label for="Part-time work">
+                <input type="checkbox" id="Part-time work" name="activities" value="Part-time work"> Part-time work
+              </label>
+
+              <label for="Full-time work">
+                <input type="checkbox" id="Full-time work" name="activities" value="Full-time work"> Full-time work
+              </label>
+          </fieldset> 
+
     </form>
     <p>
     <button onclick="window.location.href='./survey-2.html';">

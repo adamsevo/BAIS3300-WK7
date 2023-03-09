@@ -6,10 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Page 2</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <h1>Survey Page 2</h1>
+
+    <form>
+        <fieldset>
+            <legend> Preferred Transportation </legend>
+        <div>
+            <label for="transport">Select your preferred method of transportation:</label>
+                <select name="transport" id="transport" required>
+                    <option value="">Please select a response...</option>
+                    <option value="1">Walking</option>
+                    <option value="2">Scooter, electric or standard</option>
+                    <option value="3">Biking, electric or standard</option>
+                    <option value="4">Moped</option>
+                    <option value="5">Motorcycle</option>
+                    <option value="6">Personal Car/Truck</option>
+                    <option value="7">Public transportation</option>
+                    <option value="8">Other</option>
+                </select>
+        </div>
+        </fieldset>
+        <p>
+            
+        </p>
+        <div>
+            <fieldset>
+                <legend> Do you own a car? (Coupe, sedan, crossover, SUV, or truck) </legend>
+            <label for="yes">
+                <input type="radio" id="yes" name="vehicle" value="yes"> Yes
+            </label>
+            <label for="no">
+                <input type="radio" id="no" name="vehicle" value="no"> No
+            </label>
+            </fieldset>
+        </div>
+        <p>
+            
+        </p>
+
+        <fieldset>
+            <legend> Total vehicles</legend>
+        <div>
+            <label for="transport">How many vehicles/methods of transportation do you own?:</label>
+                <select name="transport" id="transport" required>
+                    <option value="">Please select a response...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 or more</option>
+                </select>
+        </div>
+        </fieldset>
+        <p>
+
+        </p>
+
+        <img src="transportation.jpg" alt="Different transportation methods & vehicles">
+
+    </form>
+
     <p>
     <button onclick="window.location.href='./thank-you.html';">
             Submit survey
